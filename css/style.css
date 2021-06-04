@@ -18,7 +18,6 @@ ul {
 }
 
 .section {
-    width: 100%;
     padding: 100px;
     border-top: 8px solid #000;
 }
@@ -33,7 +32,16 @@ nav {
     border-right: 8px solid #000;
     padding: 40px 40px 80px;
     overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
+
+nav::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+
 
 #ecom_icons {
     display: flex;
@@ -83,6 +91,7 @@ nav > ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 #shop_link_top_menu i {
@@ -355,31 +364,44 @@ h1 {
 
 #promo {
     background: #fff;
+    width: auto;
     display: flex;
     align-items: center;
     padding: 100px 50px;
-    overflow-x: auto;
 }
 
 .promo_header_cont {
-    max-height: 500px;
-    max-width: 500px;
-    margin-right: 20px;
+    position: relative;
+    background: red;
+    min-width: 50%;
+    margin-right: 30px;
+}
+
+.promo_header_cont:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
 }
 
 .promo_header_cont img {
     height: 100%;
     width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .products_cont {
+    height: 500px;
     display: flex;
+    overflow-x: scroll;
 }
 
 .promo_product {
     margin-right: 20px;
     width: 300px;
-    height: 100%;
 }
 
 .promo_prod_img {
@@ -468,3 +490,202 @@ h1 {
     position: absolute;
     bottom: 200px;    
 }
+
+/* ***HOVER ELEMENTS*** */
+
+#shop_link_top_menu:hover {
+    color: #EF849F;
+}
+
+#shop_link_top_menu:hover #shop_slide_menu {
+    display: block;
+}
+
+/* QUADRETTI */
+
+#quadretti {
+    background: #fff;
+}
+
+.quad_title_cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.quadretti_title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.quad_view_all {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.quadretti_cont {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.quadretto {
+    width: 250px;
+    margin-right: 30px;
+}
+
+.quadretto_pic {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.quadretto_pic img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quad_title {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.quad_price {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    padding-bottom: 30px;  
+}
+
+/* MAGLIA POP */
+
+#maglia_pop {
+    background: url('../img/maglia-pop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+/* MAGLIE VARIE */
+
+#maglie_varie {
+    padding: 100px 50px;
+    background: #fff;
+}
+
+.maglie_varie_title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.maglie_varie_cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.maglietta {
+    width: 250px;
+}
+
+.maglia_pic {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.maglia_pic img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.maglia_title {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.maglia_price {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    padding-bottom: 30px;  
+}
+
+/* NEWSLETTER */
+
+#newsletter {
+    background: #FEE200;
+    padding: 150px 100px;
+}
+
+.news_text_cont {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.news_title {
+    width: 80%;
+    font-size: 38px;
+    font-weight: 500;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 80px;    
+}
+
+.news_mail_cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+}
+
+.news_mail_cont input {
+    border: none;
+    background: #FEE200;
+}
+
+.news_stay_up {
+    width: 80%;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #000;
+    margin: 30px 0;
+}
+
+.news_privacy {
+    width: 80%;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+}
+
+
