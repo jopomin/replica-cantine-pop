@@ -5,6 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background: #EF849F;
+}
+
 a {
     text-decoration: none;
 }
@@ -14,6 +18,7 @@ ul {
 }
 
 .section {
+    width: 100%;
     padding: 100px;
     border-top: 8px solid #000;
 }
@@ -353,8 +358,7 @@ h1 {
     display: flex;
     align-items: center;
     padding: 100px 50px;
-    overflow-x: scroll;
-    width: auto;
+    overflow-x: auto;
 }
 
 .promo_header_cont {
@@ -435,4 +439,32 @@ h1 {
     color: rgba(0, 0, 0, 0.8);
     text-transform: uppercase;
     text-decoration: line-through;
+}
+
+/* GADGETS */
+
+#gadgets {
+    position: relative;
+    height: 100vh;
+    background: url('../img/pop-gadget.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gad_sect_title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+    margin-bottom: 15px;
+    font-size: 84px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;   
+}
+
+#gadgets_cta {
+    position: absolute;
+    bottom: 200px;    
 }
