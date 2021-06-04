@@ -14,7 +14,6 @@ ul {
 }
 
 .section {
-    width: 100%;
     padding: 100px;
     border-top: 8px solid #000;
 }
@@ -320,22 +319,23 @@ h1 {
 .slid_pl_cont {
     display: flex;
     justify-content: center;
-    margin: 100px 0 -30px;
+    margin: 80px 0 -30px;
 }
 
 .slider_player {
     border-radius: 20px;
-    padding: 5px 10px;
+    padding: 10px;
     background: rgba(200, 200, 200, 0.5);
     display: flex;
 }
 
 .sl_dot {
-    height: 8px;
-    width: 8px;
+    height: 10px;
+    width: 10px;
     border-radius: 100%;
     margin: 0 5px 0 0;
     background: #fff;
+    cursor: pointer;
 }
 
 .sl_dot:last-child {
@@ -344,4 +344,95 @@ h1 {
 
 .active_dot {
     background: #000;
+}
+
+/* PROMO */
+
+#promo {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 100px 50px;
+    overflow-x: scroll;
+    width: auto;
+}
+
+.promo_header_cont {
+    max-height: 500px;
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.promo_header_cont img {
+    height: 100%;
+    width: 100%;
+}
+
+.products_cont {
+    display: flex;
+}
+
+.promo_product {
+    margin-right: 20px;
+    width: 300px;
+    height: 100%;
+}
+
+.promo_prod_img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.promo_prod_img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.prod_discount{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #EF849F;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo_prod_title {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.promo_prod_price_cont {
+    display: flex;
+}
+
+.promo_prod_final_price {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.promo_prod_orig_price {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    text-decoration: line-through;
 }
