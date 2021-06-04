@@ -756,3 +756,59 @@ h1 {
     font-weight: 600;
     margin: 0 15px;
 }
+
+/* GALLERY */
+
+
+#gallery {
+    padding: 0;
+}
+/* Sistema per avere rapporto 1:1 tra height e width di .gal_pic */
+
+.gal_pic {
+    position: relative;
+    overflow: hidden;
+}
+
+.gal_pic:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.gal_pic img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.top_gallery {
+    display: flex;
+    width: 100%;
+}
+
+.top_right_gal,
+.top_left_gal,
+.first_pic_gal,
+.second_pic_gal,
+.trd_pic_gal,
+.frt_pic_gal {
+    width: 50%;
+}
+
+.top_top_left_gal,
+.top_bot_left_gal,
+.bottom_gallery {
+    display: flex;
+}
+
+.sxt_pic_gal,
+.svn_pic_gal,
+.egt_pic_gal,
+.nnt_pic_gal {
+    width: 25%;
+}
