@@ -716,3 +716,43 @@ h1 {
     position: absolute;
     bottom: 150px;      
 }
+
+/* TESTIMONIAL */
+
+#testimonial {
+    padding: 150px 100px;
+    background: #EF849F;
+}
+
+.test_text_cont {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.test_name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+
+.test_text {
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #000;
+    margin: 60px 0;
+}
+
+.test_slide_pl {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #000;
+    font-weight: 300;
+}
+
+.test_slide_num {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 15px;
+}
