@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon_32x32.gif">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/style.css">
 <!--     <script src="js/main.js"></script> -->
-    <title>Cantine Pop - Molfetta</title>
+    <title>Cantine Pop - Replica</title>
 </head>
 <body>
     <div class="body_cont">
@@ -26,6 +27,25 @@
                 <li><a href="#">Wine Bistrot</a></li>
                 <li><a href="#" id="shop_link_top_menu">Shop <span><i class="fas fa-chevron-right"></i></span></a></li>
             </ul>
+            <ul id="bottom_menu">
+                <li><a href="#">Dove Siamo</a></li>
+                <li><a href="#">Prenota un tavolo</a></li>
+                <li><a href="#">Catering</a></li>
+                <li><a href="#">Contattaci</a></li>
+                <li><a href="#">Termini & Condizioni</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <ul id="menu_login">
+                <li><a href="#">Login</a></li>
+            </ul>
+            <div id="menu_search">
+                <div id="src_cont">
+                    <input id="src_bar" placeholder="Cerca..." type="text">
+                    <div id="src_btn">
+                        <i id="src-btn" class="fas fa-search"></i>               
+                    </div>
+                </div>
+            </div>
         </nav>
         <main>
             <div class="jumbotron">
@@ -34,10 +54,48 @@
                     <div class="jumbo_text_cont">
                         <div id="jumbo_tag" class="title_tag">Cantine Pop</div>
                         <h1>Una cantina a regola d'arte!</h1>
-                        <p id="main_header_descr">Cantine Pop, nel cuore del centro storico di Molfetta, è la prima galleria enogastronomica della Puglia che unisce l'arte contemporanea ad una raffinata cucina di ispirazione "popolare", con una carta vini con più di 150 etichette è un piacere per gli occhi e per il palato.</p>
-                        <div id="main_header_btn">
-                            <a href="#" class="btn btn_primary btn_lg">Sfoglia il nostro menù<i class="fas fa-chevron-right"></i></a>
-                        </div>
+                        <p id="jumbo_text">Cantine Pop, nel cuore del centro storico di Molfetta, è la prima galleria enogastronomica della Puglia che unisce l'arte contemporanea ad una raffinata cucina di ispirazione "popolare", con una carta vini con più di 150 etichette è un piacere per gli occhi e per il palato.</p>
+                        <div id="jumbo_cta" class="btn_lg_cont"><a href="#" class="btn btn_prm btn_lg">Sfoglia il nostro menù<i class="fas fa-chevron-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="vino_arte_cibo" class="section">
+                <div id="vino_box" class="vac_box">
+                    <div class="vac_pic">
+                        <img src="img/vino-rose.jpg" alt="">
+                    </div>
+                    <h2 class="vac_title">Vino</h2>
+                    <p class="vac_subtitle">Km Zero, Naturali e Bio</p>
+                    <p class="vac_descr">Esiste in Italia una bevanda più POP del vino?
+                        E qual è il suono di una bottiglia appena stappata? Da questa piccola provocazione nasce la nostra filosofia: vivere il vino in maniera colorata e informale! Grazie all'attenta selezione del  <strong>Sommelier Rudy Rinaldi</strong> scoprirete piccole cantine ed etichette prestigiose, vini tradizionali e vini naturali, da tutte le principali regioni enologiche del mondo.</p>
+                </div>
+                <div id="arte_box" class="vac_box">
+                    <div class="vac_pic">
+                        <img src="img/tavoli.jpg" alt="">
+                    </div>
+                    <h2 class="vac_title">Arte</h2>
+                    <p class="vac_subtitle">Dal Pop al Contemporaneo</p>
+                    <p class="vac_descr">Ogni visita a Cantine Pop vi consentirà di ammirare sempre nuove opere di grandi Maestri dell’arte contemporanea come le coloratissime sculture luminonse di Marco Lodola o i collage dadaisti di Vincenzo Mascoli. La direzione artistica delle mostre è affidata a Nicolò Giovine e Sebastiano Pepe, fondatori di <strong>Avangart</strong>, progetto culturale volto a sensibilizzare il pubblico ad ogni forma d'arte.</p>
+                </div>
+                <div id="cibo_box" class="vac_box">
+                    <div class="vac_pic">
+                        <img src="img/pesce-vino.jpg" alt="">
+                    </div>
+                    <h2 class="vac_title">Cibo</h2>
+                    <p class="vac_subtitle">Tradizione e Innovazione</p>
+                    <p class="vac_descr">Che si tratti di un aperitivo tra amici o una cena romantica, ogni ricetta è immaginata per trasportarvi in un viaggio spazio-temporale tra passato e presente. Una cucina "popolare" reinventata e reinterpretata con estro e creatività, per riscoprire tradizioni culinarie e ingredienti del territorio spesso dimenticati. Il menù del ristorante è curato in ogni dettaglio dallo <strong>Chef Onofrio Cafagna</strong></p>
+                </div>
+            </div>
+            <div id="catering" class="section">
+                <h2 id="catering_title" class="snd_sect_title">Catering</h2>
+                <p id="catering_text" class="snd_sect_text">Affida a Cantine Pop l'organizzazione del tuo evento! Insieme allo chef Onofrio Cafagna sarà possibile personalizzare il menù in ogni dettaglio e grazie alla collaborazione del nostro team di professionisti ti aiuteremo ad individuare la location più adatta alla tua festa.</p>
+                <div id="catering_cta" class="btn_lg_cont"><a class="btn btn_snd btn_lg" href="#">Richiedi info<i class="fas fa-chevron-right"></i></a></div>
+                <div class="slid_pl_cont">
+                    <div id="slid_pl_catering" class="slider_player">
+                        <div class="active_dot sl_dot"></div>
+                        <div class="sl_dot"></div>
+                        <div class="sl_dot"></div>
+                        <div class="sl_dot"></div>
                     </div>
                 </div>
             </div>

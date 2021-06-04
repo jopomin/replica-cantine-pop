@@ -13,6 +13,12 @@ ul {
     list-style: none;
 }
 
+.section {
+    width: 100%;
+    padding: 100px;
+    border-top: 8px solid #000;
+}
+
 nav {
     width: 20%;
     height: 100vh;
@@ -21,7 +27,8 @@ nav {
     left: 0;
     background: #fff;
     border-right: 8px solid #000;
-    padding: 40px;
+    padding: 40px 40px 80px;
+    overflow-y: scroll;
 }
 
 #ecom_icons {
@@ -50,16 +57,22 @@ nav {
     width: 100%;
 }
 
-#top_menu {
+nav > ul {
     margin: 50px 0;
+}
+
+nav > ul li {
+    margin: 15px 0;
+}
+
+nav > ul li a {
+    font-weight: 500;
+    color: #000;
+    text-transform: uppercase;
 }
 
 #top_menu li a {
     font-size: 20px;
-    font-weight: 500;
-    color: #000;
-    text-transform: uppercase;
-    margin: 15px 0;
 }
 
 #shop_link_top_menu {
@@ -71,6 +84,51 @@ nav {
 #shop_link_top_menu i {
     font-size: 12px;
 }
+
+#bottom_menu li a,
+#menu_login li a {
+    font-size: 14px;
+}
+
+#menu_search {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 20%;
+    border-right: 8px solid #000;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#src_cont {
+    height: 40px;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#src_bar {
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+#src_btn {
+    margin-left: 5px;
+}
+
+#src_btn i {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
 
 main {
     width: 80%;
@@ -131,7 +189,7 @@ h1 {
     text-transform: uppercase;
 }
 
-#main_header_descr {
+#jumbo_text {
     color: #fff;
     font-size: 19px;
     font-weight: 500;
@@ -140,22 +198,150 @@ h1 {
 }
 
 .btn {
-    background: #fff;
-    color: #000;
-    padding: 18px 20px;
-    font-size: 15px;
-    font-weight: 700;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
 }
 
-#main_header_btn {
-    margin-top: 45px;
+.btn i {
+    vertical-align: middle;
 }
 
-#main_header_btn i {
-    vertical-align: middle;
+.btn_prm {
+    background: #fff;
+    color: #000;
+}
+
+.btn_lg {
+    padding: 18px 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn_lg i {
     font-size: 14px;
     margin-left: 10px;
+}
+
+.btn_lg_cont {
+    margin-top: 65px;
+}
+
+
+/* VINO-ARTE-CIBO */
+
+#vino_arte_cibo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vac_box {
+    width: calc((100% - 230px)/3);
+}
+
+/* Sistema per avere rapporto 1:1 tra height e width per la maschera var_pic */
+
+.vac_pic {
+    position: relative;
+    width: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.vac_pic:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.vac_pic img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.vac_title {
+    margin: 5px 0;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.vac_subtitle {
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: italic;
+    color: #000;
+}
+
+.vac_descr {
+    font-size: 15px;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #000;
+}
+
+/* CATERING SECTION */
+
+#catering {
+    background: url('../img/dots_on_yellow_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.snd_sect_title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.snd_sect_text {
+    color: #000;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.btn_snd {
+    background: #000;
+    color: #fff;
+}
+
+.slid_pl_cont {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 -30px;
+}
+
+.slider_player {
+    border-radius: 20px;
+    padding: 5px 10px;
+    background: rgba(200, 200, 200, 0.5);
+    display: flex;
+}
+
+.sl_dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    margin: 0 5px 0 0;
+    background: #fff;
+}
+
+.sl_dot:last-child {
+    margin: 0;
+}
+
+.active_dot {
+    background: #000;
 }
