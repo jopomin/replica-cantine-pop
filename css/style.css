@@ -812,3 +812,91 @@ h1 {
 .nnt_pic_gal {
     width: 25%;
 }
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    border-top: 8px solid #000;
+    padding: 150px 100px;
+    background: #FEE200;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > div {
+    width: calc((100% - 80px)/2);
+}
+
+footer h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+.ft_bio_text {
+    font-size: 15px;
+    line-height: 1.75;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 30px;   
+}
+
+.ft_bio_contacts {
+    margin-bottom: 250px;
+}
+
+.ft_bio_contacts li {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 7px 0;
+    text-transform: uppercase;
+}
+
+.ft_news_mail_cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    margin-bottom: 100px;
+}
+
+.ft_news_mail_cont input {
+    border: none;
+    background: #FEE200;
+}
+
+.ft_news_mail_cont i {
+    font-size: 12px;
+}
+
+.ft_copyright,
+.ft_copyright a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+
+.ft_copyright a {
+    cursor: pointer;
+}
+
+.ft_menu_menu li {
+    margin: 15px 0;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.ft_menu_menu li a {
+    cursor: pointer;
+    color: #000;
+}
