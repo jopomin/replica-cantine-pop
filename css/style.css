@@ -688,4 +688,31 @@ h1 {
     color: #000;
 }
 
+/* CALZINI */
 
+#calzini {
+    background: #fff;
+    position: relative;
+    height: 100vh;
+    background: url('../img/calzini-lodola.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.calzini_title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+    margin-bottom: 15px;
+    font-size: 84px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;   
+}
+
+.calzini_cta {
+    position: absolute;
+    bottom: 150px;      
+}
